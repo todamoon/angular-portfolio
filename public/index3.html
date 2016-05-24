@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html ng-app>
+
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio displaying work that I have done in the past">
+	<meta name="author" content="Leah Henry">
+	<title>Leah Henry - Portfolio</title>
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Lato">
+	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/ihover.css" />
+	<link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" />
+</head>
+
+<body>
+
+	<style>
+		.affix {
+			top: 0;
+			position: fixed;
+			z-index: 1;
+			width: 100%;
+		}
+
+		.affix-top {
+			position: absolute;
+			width: 100%;
+		}
+
+		.hello {
+			top: 0;
+			height: 600px;
+			background-color: #16a085;
+			width: 100%;
+		}
+
+		#start .big {
+			text-align: center;
+			font-size: 5em;
+			z-index: 1099 !important;
+		}
+
+		.cover {
+			background-color: #fff;
+			z-index: 0 !important;
+		}
+
+		.me {
+			border-radius: 1500px;
+			width: 300px;
+			height: 300px;
+		}
+	</style>
+	<div class="hello" data-spy="affix-top">
+		<div id="start">
+			<h1 id="example2" class="big" data-typeit-strings="This was defined with a data-typeit-* attribute."> $('#example2').typeIt();</h1>
+		</div>
+	</div>
+	<div ng-init="hello='world'">
+		<h1>{{hello}}</h1>
+	</div>
+	<div class="cover">
+		<header>
+			<nav role="navigation" class="navbar-inverse" data-spy="affix" data-offset-top="650" data-offset-bottom="0">
+				<!--  <nav class="navbar navbar-inverse navbar-fixed-top">-->
+				<div class="container">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><img src="img/lh-logo-03.png" alt="Leah Henry Logo Image" /></a>
+					</div>
+					<div id="navbar" class="collapse navbar-collapse pull-right">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="#work">Work</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+					<!--/.nav-collapse -->
+				</div>
+			</nav>
+		</header>
+		<!--Section Heading -->
+		<div class="container">
+
+
+			<!--Portfolio Section-->
+
+			<div class="container">
+				<!--First of Row-->
+				<div class="row">
+					<div id="about" class="head-label">
+						<h1>Somethings About Me</h1>
+						<p class="lead">We are all different</p>
+					</div>
+					<div class="col-lg-offset-4 col-lg-4 col-md-4 col-sm-4">
+						<img class="img-responsive me center-block" src="img/lh.jpg" alt="Leah Henry Photo" />
+					</div>
+					<div class="col-lg-12">
+						<p class="spacer">Hi there, I’m <strong>Leah</strong>. I’m a web designer and technology enthusiast who strives to create clean and minimalistic user interfaces. I have over 4 years experience designing and building web pages. I’m also an amateur photographer and
+							an audio engineer. My education and international travel experiences have molded me to be a motivated self-starter, digital artist, and a team player.
+						</p>
+
+						<p>I am a creative person; whether it is designing an app to solve a problem or creating new recipes in the kitchen. I enjoy researching and understanding how things work. I’m a designer who is passionate about the web and all things related. I enjoy
+							collaborative projects because when ideas are fused even greater ones are produced.
+						</p>
+
+						<p>Growing up in the Caribbean and traveling have helped me to look at design through various lens. In life, I’ve learned that I will never know it all, therefore I’m always eager to learn more and grow through experience. When I’m not busy modifying
+							my code or redesigning an old project you can find me cycling, listening to podcasts or binge watching a show.
+						</p>
+					</div>
+				</div>
+
+				<!--End of Section -->
+				<!--Second Row-->
+				<div class="row">
+					<div id="work" class="head-label">
+						<h1>Work</h1>
+						<p class="lead">This is a collection of some of my work.</p>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+						<!-- left to right -->
+						<div class="ih-item circle effect13 top_to_bottom">
+							<a href="penpal.html">
+								<div class="img"><img class="img-responsive center-block mask" alt="PenPal Logo" src="img/logo-PP.png" width="400" height="400" /></div>
+								<div class="info">
+									<h3>PenPal</h3>
+									<p>Concept | UI/UX</p>
+									<button type="button" class="btn btn-sm btn-default">View Project</button>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- end left & right -->
+					<!--top to bottom-->
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+						<!-- top to bottom -->
+						<div class="ih-item circle effect13 top_to_bottom">
+							<a href="buzzlink.html">
+								<div class="img"><img class="img-responsive mask" alt="Buzzlink Logo" src="img/logo-BL.png" width="400" height="400" /></div>
+								<div class="info">
+									<h3>Buzzlink</h3>
+									<p>Web Design | Web Development</p>
+									<button type="button" class="btn btn-sm btn-default">View Project</button>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- end top to bottom -->
+
+					<!--right & left-->
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+						<!-- left to right -->
+						<div class="ih-item circle effect13 top_to_bottom">
+							<a href="draperycleaning.html">
+								<div class="img"><img class="img-responsive mask" alt="Onsite Drapery Cleaning Logo" src="img/logo-DC.png" width="400" height="400" /></div>
+								<div class="info">
+									<h3>PenPal</h3>
+									<p>Identity | UI/UX | Concept</p>
+									<button type="button" class="btn btn-sm btn-default">View Project</button>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- end right & left -->
+
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+						<!-- left & right -->
+						<div class="ih-item circle effect13 bottom_to_top">
+							<a href="perception.html">
+								<div class="img"><img class="img-responsive mask" alt="Perception International Logo" src="img/logo_04.png" width="400" height="400" /></div>
+								<div class="info">
+									<h3>Perception: International?</h3>
+									<p>Identity | UI</p>
+									<button type="button" class="btn btn-sm btn-default">View Project</button>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- end left & right -->
+
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+						<!-- bottom to top -->
+						<div class="ih-item circle effect13 bottom_to_top">
+							<a href="innovation.html">
+								<div class="img"><img class="img-responsive mask" alt="Innovation Embassy Logo" src="img/logo-IE.png" width="400" height="400" /></div>
+								<div class="info">
+									<h3>Innovation Embassy</h3>
+									<p>UI/UX | Concept</p>
+									<button type="button" class="btn btn-sm btn-default">View Project</button>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- end bottom to top -->
+
+					<div class="col-lg-4 col-md-6 col-sm-12 col-xs-12">
+						<!-- left to right -->
+						<div class="ih-item circle effect13 bottom_to_top">
+							<a href="dogtrainers.html">
+								<div class="img"><img class="img-responsive mask" src="img/logo-DT.png" alt="Dog Trainers Connection Logo" width="400" height="400" /></div>
+								<div class="info">
+									<h3>Dog Trainers Connection</h3>
+									<p>Wordpress | Web Development</p>
+									<button type="button" class="btn btn-sm btn-default">View Project</button>
+								</div>
+							</a>
+						</div>
+					</div>
+					<!-- end left to right -->
+				</div>
+
+
+				<!--Contact info Section-->
+				<div id="contact" class="head-label">
+					<h1>Say Hello</h1>
+					<p class="lead">Like my work, why not send a message.</p>
+				</div>
+			</div>
+			<div class="row">
+				<form id="hileah" action="#" method="post">
+					<div class="col-lg-6">
+						<div class="form-group-lg">
+							<label for="username">Name</label>
+							<input type="text" name="username" class="form-control" id="userName" />
+						</div>
+						<div class="form-group-lg">
+							<label for="useremail">Email</label>
+							<input type="email" name="useremail" required="required" class="form-control" id="userEmail" placeholder="Email" />
+						</div>
+					</div>
+					<div class="col-lg-6">
+						<div class="form-group-lg">
+							<label for="userMessage">Message</label>
+							<textarea class="form-control" name="userMessage" rows="4"></textarea>
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+					<div class="col-lg-8">
+						<div class="spacer"></div>
+						<div class="form-group-lg">
+							<input type="submit" class="btn-block btn-lg btn-default btn center-block" value="Send" />
+						</div>
+					</div>
+					<div class="col-lg-2"></div>
+				</form>
+			</div>
+
+			<div class="spacer"></div>
+		</div>
+		<!--Close of Container-->
+
+
+		<footer>
+			<img class="center-block fogo" alt="Leah Henry Logo" src="img/Leah_Henry-02.png" />
+			<p class="text-center">Copyright&copy; Leah Henry 2015. All Rights Reserved.</p>
+
+		</footer>
+	</div>
+	<!--Close of Container-->
+
+
+
+
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+	<!-- Placed at the end of the document so the pages load faster -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+	<script src="js/ie10-viewport-bug-workaround.js"></script>
+	<script src="../bower_components/angular/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.typeit/3.0.1/typeit.min.js
+"></script>
+</body>
+
+</html>

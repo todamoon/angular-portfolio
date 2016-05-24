@@ -1,0 +1,23 @@
+{
+  "name": "anguport",
+  "version": "1.0.0",
+  "description": "my hand-coded portfolio",
+  "main": "database.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/todamoon/angular-portfolio.git"
+  },
+  "author": "Leah Henry <henry.leah@gmail.com> (hileah.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/todamoon/angular-portfolio/issues"
+  },
+  "homepage": "https://github.com/todamoon/angular-portfolio/issues#readme",
+  "dependencies": {
+    "typeit": "^3.0.1"
+  }
+}
